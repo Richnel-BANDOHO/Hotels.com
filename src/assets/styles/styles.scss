@@ -1,0 +1,52 @@
+@import 'variables/includes';
+
+html {
+    font-size: 62.5%; // Sets up REM base
+    height: 100%;
+}
+
+body {
+    font-family: $font-stack-avenir;
+    font-weight: 400;
+    min-height: 100%;
+    background: $background-grey;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.list-group {
+    .list-group-item {
+        border: 0;
+        border-radius: 0;
+    }
+}
+
+.homepage {
+    height: 100%;
+    padding: 2rem 0;
+
+    .container {
+        background: $color-white;
+    }
+}
+
+.more-hotels {
+    font-weight: 700;
+    position: relative;
+    padding-right: 2rem;
+    display: inline-block;
+
+    &:after {
+      content: '';
+      width: 15px;
+      height: 10px;
+      background-image: url('../spritesheet.png');
+      background-position: -5px -25px;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 5px;
+    }
+  }
